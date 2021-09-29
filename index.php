@@ -1,8 +1,9 @@
 <?php
 
 require 'backend/connect.php';
+header ("Content-type: text/html; charset=utf-8");
 
-$nome = "João";
+$nome = "JOÃO";
  
 $sql = "INSERT INTO first_names (name) VALUES ('".$nome."')";
 if (mysqli_query($conn, $sql)) {
